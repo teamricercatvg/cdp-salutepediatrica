@@ -1,0 +1,16 @@
+.env
+.env.*
+!.env.example
+.vercel/
+node_modules/
+.next/
+.supabase/
+supabase/.temp/
+*.pem
+*.key
+.DS_Store
+.vercel
+.env*
+!.env.example
+*.tsbuildinfo
+__pycache__/
