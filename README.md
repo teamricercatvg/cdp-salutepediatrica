@@ -4,6 +4,8 @@ Pagina provvisoria dei corsi di perfezionamento sulla salute pediatrica globale
 dell’Università degli Studi di Roma Tor Vergata, per medici e infermieri.
 Il gestionale completo sarà definito in una successiva sessione.
 
+Sito pubblico: https://www.salutepediatricaglobale.it
+
 ## Sviluppo della pagina
 
 ```bash
