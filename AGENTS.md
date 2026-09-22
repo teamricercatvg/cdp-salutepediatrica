@@ -79,7 +79,8 @@ bash scripts/github.sh api repos/teamricercatvg/cdp-salutepediatrica/commits/<SH
 
 - `scripts/supabase-cli.py` supporta `query`, `push`, `dump`, `lint`, `types`. Le migrazioni dovranno essere versionate quando inizierà lo sviluppo del database; non eseguire `push` senza averne esaminato il contenuto.
 - Preferire CLI e SSH per le operazioni tecniche. Il browser serve soprattutto per login e autorizzazioni che richiedono l’utente; non richiedere nuovamente autorizzazioni già completate e ancora valide.
-- Git e Vercel sono collegati: un push su `main` può pubblicare in produzione. Quando la pubblicazione rientra nella richiesta, verificare il risultato del deploy, non soltanto il successo del push. Evitare un secondo deploy CLI se quello automatico è già riuscito.
+- Quando l'utente chiede commit e push, pubblicare direttamente su `main`, salvo sua esplicita indicazione diversa. Non creare un branch separato per prudenza: l'utente accetta il deployment automatico conseguente. Usare l'account GitHub dedicato `teamricercatvg` tramite il wrapper del progetto.
+- Git e Vercel sono collegati: un push su `main` può pubblicare in produzione. Verificare il risultato del deploy, non soltanto il successo del push. Evitare un secondo deploy CLI se quello automatico è già riuscito.
 - Per un deploy manuale autorizzato usare `bash scripts/vercel.sh deploy --prod --yes`; per una preview omettere `--prod`.
 - La configurazione SSH dedicata è `/Users/stefanolaptop/.ssh/config_cdp_netcup`; mantenere il controllo rigoroso della chiave host. Non accettare alla cieca un’impronta cambiata.
 
